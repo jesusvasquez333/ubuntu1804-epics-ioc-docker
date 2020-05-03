@@ -13,7 +13,7 @@ stages:
     if: tag IS present
 
 jobs:
-  include:''
+  include:
     - stage: deploy_docker
       name: "Deploy Docker Image"
       before_script:
